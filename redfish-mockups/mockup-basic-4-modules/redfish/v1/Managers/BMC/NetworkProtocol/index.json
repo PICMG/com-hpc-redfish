@@ -1,0 +1,65 @@
+{
+    "@odata.type": "#ManagerNetworkProtocol.v1_2_0.ManagerNetworkProtocol",
+    "Id": "NetworkProtocol",
+    "Name": "Manager Network Protocol",
+    "Description": "Manager Network Service",
+    "Status": {
+        "@odata.type": "#Resource.Status",
+        "State": "Enabled",
+        "Health": "OK"
+    },
+    "HostName": "web483-bmc",
+    "FQDN": "web483-bmc.dmtf.org",
+    "HTTP": {
+        "@odata.type": "#ManagerNetworkProtocol.v1_0_0.Protocol",
+        "ProtocolEnabled": true,
+        "Port": 80
+    },
+    "HTTPS": {
+        "@odata.type": "#ManagerNetworkProtocol.v1_0_0.Protocol",
+        "ProtocolEnabled": true,
+        "Port": 443
+    },
+    "IPMI": {
+        "@odata.type": "#ManagerNetworkProtocol.v1_0_0.Protocol",
+        "ProtocolEnabled": true,
+        "Port": 623
+    },
+    "SSH": {
+        "@odata.type": "#ManagerNetworkProtocol.v1_0_0.Protocol",
+        "ProtocolEnabled": true,
+        "Port": 22
+    },
+    "SNMP": {
+        "@odata.type": "#ManagerNetworkProtocol.v1_0_0.Protocol",
+        "ProtocolEnabled": true,
+        "Port": 161
+    },
+    "VirtualMedia": {
+        "@odata.type": "#ManagerNetworkProtocol.v1_0_0.Protocol",
+        "ProtocolEnabled": true,
+        "Port": 17988
+    },
+    "SSDP": {
+        "@odata.type": "#ManagerNetworkProtocol.v1_0_0.SSDProtocol",
+        "ProtocolEnabled": true,
+        "Port": 1900,
+        "NotifyMulticastIntervalSeconds": 600,
+        "NotifyTTL": 5,
+        "NotifyIPv6Scope": "Site"
+    },
+    "Telnet": {
+        "@odata.type": "#ManagerNetworkProtocol.v1_0_0.Protocol",
+        "ProtocolEnabled": true,
+        "Port": 23
+    },
+    "KVMIP": {
+        "@odata.type": "#ManagerNetworkProtocol.v1_0_0.Protocol",
+        "ProtocolEnabled": true,
+        "Port": 5288
+    },
+    "Oem": {},
+    "@odata.context": "/redfish/v1/$metadata#ManagerNetworkProtocol.ManagerNetworkProtocol",
+    "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol",
+    "@Redfish.Copyright": "Copyright 2014-2018 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright."
+}

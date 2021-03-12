@@ -1,0 +1,26 @@
+{
+    "@odata.type": "#ChassisCollection.ChassisCollection",
+    "Description": "A collection of chassis, including COM-HPC Carrier and Modules",
+    "Name": "Chassis Collection",
+    "Members@odata.count": 5,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Carrier"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Module1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Module2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Module3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Module4"
+        }
+     ],
+    "@odata.context": "/redfish/v1/$metadata#ChassisCollection.ChassisCollection",
+    "@odata.id": "/redfish/v1/Chassis",
+    "@Redfish.Copyright": "Copyright 2014-2016 Distributed Management Task Force, Inc. (DMTF). For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright."
+}

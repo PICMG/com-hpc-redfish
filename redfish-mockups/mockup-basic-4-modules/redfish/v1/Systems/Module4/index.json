@@ -1,0 +1,80 @@
+{
+    "@odata.type": "#ComputerSystem.v1_10_0.ComputerSystem",
+    "@odata.id": "/redfish/v1/Systems/Module4",
+    "Id": "Module4",
+    "Name": "PICMG COM-HPC Module 4",
+    "AssetTag": "PICMGMODULEASSETTAG",
+    "SystemType": "Physical",
+    "SerialNumber": "00000004",
+    "Manufacturer": "PICMG",
+    "MemorySummary": {
+        "TotalSystemMemoryGiB": 4,
+        "Status": {
+            "State": "Enabled",
+            "Health": "OK"
+        }
+    },
+    "ProcessorSummary": {
+        "Count": 1,
+        "Model": "Intel Core-I5",
+        "Status": {
+            "State": "Enabled",
+            "Health": "OK"
+        }
+    },
+    "Model": "PICMG0001",
+    "PartNumber": "Part-01",
+    "PowerState": "On",
+    "UUID": "00000000-0000-0000-0000-000000000000",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK"
+    },
+    "Boot": {
+        "BootSourceOverrideEnabled":"Once",
+        "BootSourceOverrideMode": "UEFI",
+        "UefiTargetBootSourceOverride": "uefiDevicePath",
+        "BootSourceOverrideTarget": "Pxe",
+        "BootSourceOverrideTarget@Redfish.AllowableValues": [
+            "None",
+            "Pxe",
+            "Usb",
+            "Hdd",
+            "BiosSetup",
+            "UefiTarget",
+            "UefiHttp"
+         ]
+     },
+     "LogServices":  {
+        "@odata.id": "/redfish/v1/Systems/Module4/LogServices"
+     },
+     "Processors":  {
+        "@odata.id": "/redfish/v1/Systems/Module4/Processors"
+     },
+
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/Module4"
+            }
+        ],
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/MMC4"
+            }
+        ]
+    },
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "target": "/redfish/v1/Systems/Module4/Actions/ComputerSystem.Reset",
+            "ResetType@Redfish.AllowableValues": [
+                "On",
+                "ForceOff",
+                "GracefulShutdown",
+                "ForceRestart",
+                "GracefulRestart"
+            ]
+        }
+    }
+
+}

@@ -1,0 +1,54 @@
+{
+    "@odata.type": "#Thermal.v1_0_2.Thermal",
+    "Id": "Thermal",
+    "Name": "Thermal",
+    "Temperatures": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Module3/Thermal#/Temperatures/0",
+            "MemberId": "0",
+            "Name": "CPU Temperature",
+            "SensorNumber": 1,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK"
+            },
+            "ReadingCelsius": 49,
+            "UpperThresholdFatal": 90,
+            "UpperThresholdCritical": 80,
+            "UpperThresholdNonCritical": 70,
+            "MinReadingRangeTemp": 0,
+            "MaxReadingRangeTemp": 100,
+            "PhysicalContext": "CPU",
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/Module3/Processors/CPU"
+                }
+            ]
+        }
+    ],
+    "Fans": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Module3/Thermal#/Fans/0",
+            "MemberId": "0",
+            "FanName": "System Fan",
+            "PhysicalContext": "CPUSubsystem",
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK"
+            },
+            "Reading": 2000,
+            "ReadingUnits": "RPM",
+            "LowerThresholdFatal": 0,
+            "MinReadingRange": 0,
+            "MaxReadingRange": 5000,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/Module3/Processors/CPU"
+                }
+            ]
+        }
+    ],
+    "@odata.context": "/redfish/v1/$metadata#Thermal.Thermal",
+    "@odata.id": "/redfish/v1/Chassis/Module3/Thermal",
+    "@Redfish.Copyright": "Copyright 2014-2016 Distributed Management Task Force, Inc. (DMTF). For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright."
+}

@@ -1,0 +1,50 @@
+{
+    "@odata.type": "#Chassis.v1_10_0.Chassis",
+    "AssetTag": "PICMGCARRIERASSETTAG",
+    "Id": "Carrier",
+    "ChassisType": "Enclosure",
+    "Links": {
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/BMC"
+            }
+        ],
+        "Contains": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/Module1"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/Module2"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/Module3"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/Module4"
+            }
+        ]
+    },
+    "Manufacturer": "PICMG",
+    "Model": "PICMG Carrier 00001",
+    "Name": "PICMG Carrier 1",
+    "PartNumber": "224071-J23",
+    "PowerState": "On",
+    "SerialNumber": "437XR1138R2",
+    "UUID": "32354641-4135-4332-4a35-313735303734",
+    "Location": {
+        "Info": "Row10-Rack1"
+     },
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK"
+     },
+    "Power": {
+        "@odata.id": "/redfish/v1/Chassis/Carrier/Power"
+     },
+    "Thermal": {
+        "@odata.id": "/redfish/v1/Chassis/Carrier/Thermal"
+     },
+    "@odata.context": "/redfish/v1/$metadata#Chassis.Chassis",
+    "@odata.id": "/redfish/v1/Chassis/Carrier",
+    "@Redfish.Copyright": "Copyright 2014-2016 Distributed Management Task Force, Inc. (DMTF). For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright."
+}

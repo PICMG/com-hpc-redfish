@@ -1,0 +1,57 @@
+{
+    "@odata.type": "#Thermal.v1_0_2.Thermal",
+    "Id": "Thermal",
+    "Name": "Thermal",
+    "Temperatures": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Carrier/Thermal#/Temperatures/0",
+            "MemberId": "0",
+            "Name": "CabinetOutlet",
+            "SensorNumber": 1,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK"
+            },
+            "ReadingCelsius": 42,
+            "UpperThresholdFatal": 75,
+            "UpperThresholdCritical": 65,
+            "UpperThresholdNonCritical": 55,
+            "MinReadingRangeTemp": 0,
+            "MaxReadingRangeTemp": 100,
+            "PhysicalContext": "SystemBoard",
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/Carrier"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/Module1"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/Module2"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/Module3"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/Module4"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Systems/Module1"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Systems/Module2"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Systems/Module3"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Systems/Module4"
+                }
+            ]
+
+        }
+    ],
+    "@odata.context": "/redfish/v1/$metadata#Thermal.Thermal",
+    "@odata.id": "/redfish/v1/Chassis/Carrier/Thermal",
+    "@Redfish.Copyright": "Copyright 2014-2016 Distributed Management Task Force, Inc. (DMTF). For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright."
+}

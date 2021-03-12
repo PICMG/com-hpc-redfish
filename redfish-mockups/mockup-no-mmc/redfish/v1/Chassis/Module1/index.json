@@ -1,0 +1,43 @@
+{
+    "@odata.type": "#Chassis.v1_10_0.Chassis",
+    "AssetTag": "PICMGMODULEASSETTAG",
+    "Id": "Module1",
+    "ChassisType": "Module",
+    "SerialNumber": "00000001",
+    "Manufacturer": "PICMG",
+    "Model": "PICMG0001",
+    "PartNumber": "Part-01",
+    "Location": {
+        "Info": "On Carrier Board: Slot1"
+     },
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK"
+    },
+    "Power": {
+        "@odata.id": "/redfish/v1/Chassis/Module1/Power"
+     },
+    "Links": {
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/BMC"
+            }
+        ],
+
+        "ComputerSystems": [
+            {
+                "@odata.id": "/redfish/v1/Systems/Module1"
+            }
+        ],
+
+        "ContainedBy": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/Carrier"
+            }
+        ]
+        
+    },
+    "@odata.context": "/redfish/v1/$metadata#Chassis.Chassis",
+    "@odata.id": "/redfish/v1/Chassis/Module1",
+    "@Redfish.Copyright": "Copyright 2014-2016 Distributed Management Task Force, Inc. (DMTF). For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright."
+}

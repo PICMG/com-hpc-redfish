@@ -1,0 +1,23 @@
+{
+    "@odata.type": "#ComputerSystemCollection.ComputerSystemCollection",
+    "Description": "A collection of COM-HPC modules as computer systems",
+    "Name": "Computer Systems Collection",
+    "Members@odata.count": 4,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Module1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Module2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Module3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Module4"
+        }
+     ],
+    "@odata.context": "/redfish/v1/$metadata#ComputerSystemCollection.ComputerSystemCollection",
+    "@odata.id": "/redfish/v1/Systems",
+    "@Redfish.Copyright": "Copyright 2014-2016 Distributed Management Task Force, Inc. (DMTF). For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright."
+}

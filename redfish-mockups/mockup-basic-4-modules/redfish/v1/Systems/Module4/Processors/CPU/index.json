@@ -1,0 +1,19 @@
+{
+    "@odata.type": "#Processor.v1_7_0.Processor",
+    "Id": "CPU",
+    "Name": "Processor",
+    "ProcessorType": "CPU",
+    "ProcessorArchitecture": "x86",
+    "InstructionSet": "x86-64",
+    "Manufacturer": "Intel (R) Corporation",
+    "Model": "Intel Core-I5",
+    "MaxSpeedMHz": 2800,
+    "TotalCores": 2,
+    "TotalThreads": 4,
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK"
+     },
+    "@odata.id": "/redfish/v1/Systems/Module4/Processors/CPU",
+    "@Redfish.Copyright": "Copyright 2014-2016 Distributed Management Task Force, Inc. (DMTF). For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright."
+}

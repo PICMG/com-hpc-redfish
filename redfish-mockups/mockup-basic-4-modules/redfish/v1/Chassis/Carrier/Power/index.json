@@ -1,0 +1,26 @@
+{
+    "@odata.type": "#Power.v1_6_0.Power",
+    "Id": "Power",
+    "Name": "Carrier Power",
+    "PowerControl": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Carrier/Power#/PowerControl/0",
+            "MemberId": "0",
+            "Name": "Power Control 1",
+            "PowerConsumedWatts": 120,
+            "PowerCapacityWatts": 200,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK"
+            },
+            "PowerLimit": {
+                "LimitInWatts": null,
+                "LimitException": "NoAction"
+
+            }
+        }
+    ],
+    "@odata.context": "/redfish/v1/$metadata#Power.Power",
+    "@odata.id": "/redfish/v1/Chassis/Carrier/Power",
+    "@Redfish.Copyright": "Copyright 2014-2016 Distributed Management Task Force, Inc. (DMTF). For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright."
+}

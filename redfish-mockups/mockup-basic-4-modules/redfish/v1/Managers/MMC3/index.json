@@ -1,0 +1,55 @@
+{
+    "@odata.type": "#Manager.v1_3_1.Manager",
+    "Id": "MMC3",
+    "Name": "MMC for a COM-HPC Module",
+    "ManagerType": "Management Controller",
+    "Description": "MMC for a COM-HPC Module",
+    "ServiceEntryPointUUID": "92384634-2938-2342-8820-489239905423",
+    "UUID": "58893887-8974-2487-84116841891B",
+    "Model": "PICMG MMC 0001",
+    "DateTime": "2020-03-13T04:14:33+06:00",
+    "DateTimeLocalOffset": "+06:00",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK"
+    },
+    "PowerState": "On",
+    "SerialConsole": {
+        "ServiceEnabled": true,
+        "MaxConcurrentSessions": 1,
+        "ConnectTypesSupported": [
+            "IPMI"
+        ]
+    },
+    "FirmwareVersion": "1.00",
+    "SerialInterfaces": {
+        "@odata.id": "/redfish/v1/Managers/MMC3/SerialInterfaces"
+    },
+    "Links": {
+        "ManagerForServers": [
+            {
+                "@odata.id": "/redfish/v1/Systems/Module3"
+            }
+        ],
+        "ManagerForChassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/Module3"
+            }
+        ],	
+        "Oem": {}
+    },
+    "Actions": {
+        "#Manager.Reset": {
+            "target": "/redfish/v1/Managers/MMC3/Actions/Manager.Reset",
+            "ResetType@Redfish.AllowableValues": [
+                "ForceRestart",
+                "GracefulRestart"
+            ]
+        },
+        "Oem": {}
+    },
+    "Oem": {},
+    "@odata.context": "/redfish/v1/$metadata#Manager.Manager",
+    "@odata.id": "/redfish/v1/Managers/MMC3",
+    "@Redfish.Copyright": "Copyright 2014-2018 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright."
+}
